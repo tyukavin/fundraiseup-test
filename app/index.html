@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donations</title>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Include fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="build/css/main.css">
+</head>
+
+<body>
+
+  <main role="main">
+
+    <div class="container">
+
+      <section class="section section_title">
+        <div class="section__header">
+          <h1>Donations</h1>
+        </div>
+        <div class="section__footer section__footer_flex">
+          <div class="search input-group" role="search">
+            <svg class="icon icon_left">
+              <use xlink:href="build/sprite/sprite.svg#search"></use>
+            </svg>
+            <input class="input" type="search" placeholder="Search">
+          </div>
+          <div class="dropdown" aria-label="filter statuses">
+            <span class="dropdown__head">All statuses</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="content">
+
+        <div class="content__main">
+          <section class="section section_info">
+            <div class="section__header section__header_flex">
+              <div class="section__heading">
+                <div class="section__head">
+                  <svg class="icon icon_left">
+                    <use xlink:href="build/sprite/sprite.svg#dollar-sign"></use>
+                  </svg>
+                  <h2>Donation</h2>
+                </div>
+                <div class="section__price">
+                  <span class="price-euro">€20.60 EUR</span>
+                  <span class="price-usd">≈ $22.22 USD</span>
+                </div>
+              </div>
+              
+              <div class="copy">
+                <span class="copy__head">ID</span>
+                <div class="copy__content">
+                  <span class="">DYHY694Y</span>
+                  <svg class="icon icon_right">
+                    <use xlink:href="build/sprite/sprite.svg#copy"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <ul class="section-details">
+                <li class="section-details__item">
+                  <span class="section-details__head">Status</span>
+                  <div class="section-details__info status_success">
+                    <svg class="icon icon_left">
+                      <use xlink:href="build/sprite/sprite.svg#check"></use>
+                    </svg>
+                    <span>Success</span>
+                  </div>
+                </li>
+                <li class="section-details__item">
+                  <span class="section-details__head">Supporter</span>
+                  <div class="section-details__info">
+                    <a href="javascript:;" class="link">Charlotte Ann</a>
+                  </div>
+                </li>
+                <li class="section-details__item">
+                  <span class="section-details__head">Campaign</span>
+                  <div class="section-details__info">
+                    <a href="javascript:;" class="link">Workout for water</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+  
+          <section class="section section_info">
+            <div class="section__header section__header_no-pad">
+              <div class="tab-panel">
+                <div class="scroll-horiz">
+                  <ul class="tab-panel__menu">
+                    <li class="tab-panel__menu-item active">Behavior</li>
+                    <li class="tab-panel__menu-item">Appearance</li>
+                    <li class="tab-panel__menu-item">Custom Fields</li>
+                    <li class="tab-panel__menu-item">Questions</li>
+                    <li class="tab-panel__menu-item">URL Control</li>
+                  </ul>
+                </div>
+                <form class="tab-panel__content" action="">
+                  <div class="form-row">
+                    <div class="form-row__head form-row__head_center">Designation</div>
+                    <div class="form-row__content">
+                      <div class="input-full">
+                        <select class="custom-select" name="designation" id="designation">
+                          <option value="match_checkout_setting">Match Checkout Setting</option>
+                          <option value="customize">Customize</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-row__head form-row__head_center">Goal</div>
+                    <div class="form-row__content">
+                      <div class="input-full">
+                        <input type="text" value="$10.00">
+                        <select class="custom-select" name="money" id="money">
+                          <option value="usd">USD</option>
+                          <option value="eur">EUR</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-row__head">Default Amount</div>
+                    <div class="form-row__content">
+                      <div class="form-group">
+                        <label for="setting" class="form-label">
+                          <input type="radio" id="setting" name="amount">
+                          <div class="custom-radio"></div>
+                          <span>Match Checkout Setting</span>
+                        </label>
+                        <label for="customize" class="form-label">
+                          <input type="radio" id="customize" name="amount" checked="checked">
+                          <div class="custom-radio"></div>
+                          <span>Customize</span>
+                        </label>
+                      </div>
+                      <label for="donor" class="form-label">
+                        <input type="checkbox" id="donor" checked="checked">
+                        <div class="custom-checkbox"></div>
+                        <span>Allow donor to change default currency</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-row__head">Border size</div>
+                    <div class="form-row__content">
+                      <label for="" class="form-label">
+                        <div class="custom-range range1">
+                          <input type="range" class="range" min="0" max="100" step="1" value="0">
+                          <div class="track">
+                            <div class="track-inner"></div>
+                          </div>
+                          <div class="thumb"></div>
+                        </div>
+                        <span>2px</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-row__head">Border radius</div>
+                    <div class="form-row__content">
+                      <label for="" class="form-label">
+                        <div class="custom-range range2">
+                          <input type="range" class="range" min="0" max="100" step="1" value="0">
+                          <div class="track">
+                            <div class="track-inner"></div>
+                          </div>
+                          <div class="thumb"></div>
+                        </div>
+                        <span>15px</span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="section__footer section__footer_action">
+              <button class="btn btn_primary">Save changes</button>
+              <button class="btn">Cancel</button>
+            </div>
+          </section>
+        </div>
+        
+        <aside class="sidebar">
+          <nav class="menu" role="navigation">
+            <ul>
+              <li class="menu__item">
+                <a href="javascript:;">
+                  <svg class="icon icon_left">
+                      <use xlink:href="build/sprite/sprite.svg#repeat"></use>
+                  </svg>
+                  <span>Change Amount</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="javascript:;">
+                  <svg class="icon icon_left">
+                      <use xlink:href="build/sprite/sprite.svg#wallet"></use>
+                  </svg>
+                  <span>Change Payment Method</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="javascript:;">
+                  <svg class="icon icon_left">
+                      <use xlink:href="build/sprite/sprite.svg#calendar"></use>
+                  </svg>
+                  <span>Change Date</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="javascript:;">
+                  <svg class="icon icon_left">
+                      <use xlink:href="build/sprite/sprite.svg#x-circle"></use>
+                  </svg>
+                  <span>Cancel Recurring</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+    </div>
+
+  </main>
+
+<!-- Include JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js" integrity="sha512-7XdqOa4bqU/hqbUuS8epr0ECSj9laLWnualyqow2TQ3RJ+TUoac0yKNjEtgg3gHGEbM+Jbwgo6K/+Y/0mJHOfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="build/js/main.js"></script>
+</body>
+</html>
